@@ -1,8 +1,8 @@
-import { useExperience } from '../Hooks/Experience';
+import { useExperience } from "../Hooks/Experience";
 
 function Link(props) {
-    const experience = useExperience(props.level);
-    return experience ? (
+    const isinexperienced = useExperience(props.level);
+    return isinexperienced ? (
         <a
             className="App-link"
             href="https://reactjs.org"
